@@ -1,6 +1,24 @@
-<logging>
-    <log type="coverage-html" target="build/coverage"/>
-    <log type="coverage-clover" target="build/logs/clover.xml"/>
-    <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
-    <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
-</logging>
+<project name="jenkins-test" default="build" xmlns:sonar="antlib:org.sonar.ant">
+    <property file="build.properties" />
+
+    <target name="phpunit">
+        <exec executable="php bin/phpunit" failonerror="true"/>
+    </target>
+
+    <target name="requirements-checker">
+        <exec executable="php vendor/bin/requirements-checker" failonerror="true"/>
+    </target>
+
+    <target name="composer-install">
+        <exec executable="composer" failonerror="true">
+            <arg value="install"/>
+            <arg value="--optimize-autoloader"/>
+        </exec>
+    </target>
+
+    <target name="cache-clear">
+        <exec executable="php bin/console cache:clear --env=test" failonerror="true"/>
+    </target>
+
+    <target name="build" depends="composer-install, requirements-checker, cache-clear, phpunit"/>
+</project>
