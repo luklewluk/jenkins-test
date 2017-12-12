@@ -1,0 +1,54 @@
+[12-Dec-2017 19:32:24 UTC] PHP Fatal error:  Class 'Symfony\Component\BrowserKit\Client' not found in /Users/luklew/Sites/jenkins-test/vendor/symfony/http-kernel/Client.php on line 31
+[12-Dec-2017 19:32:24 UTC] PHP Stack trace:
+[12-Dec-2017 19:32:24 UTC] PHP   1. {main}() /Users/luklew/Sites/jenkins-test/bin/phpunit:0
+[12-Dec-2017 19:32:24 UTC] PHP   2. require() /Users/luklew/Sites/jenkins-test/bin/phpunit:18
+[12-Dec-2017 19:32:24 UTC] PHP   3. include() /Users/luklew/Sites/jenkins-test/vendor/symfony/phpunit-bridge/bin/simple-phpunit:244
+[12-Dec-2017 19:32:24 UTC] PHP   4. PHPUnit\TextUI\Command::main() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/phpunit:17
+[12-Dec-2017 19:32:24 UTC] PHP   5. PHPUnit\TextUI\Command->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/TextUI/Command.php:148
+[12-Dec-2017 19:32:24 UTC] PHP   6. PHPUnit\TextUI\TestRunner->doRun() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/TextUI/Command.php:195
+[12-Dec-2017 19:32:24 UTC] PHP   7. PHPUnit\Framework\TestSuite->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/TextUI/TestRunner.php:546
+[12-Dec-2017 19:32:24 UTC] PHP   8. PHPUnit\Framework\TestSuite->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestSuite.php:755
+[12-Dec-2017 19:32:24 UTC] PHP   9. PHPUnit\Framework\TestCase->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestSuite.php:755
+[12-Dec-2017 19:32:24 UTC] PHP  10. PHPUnit\Framework\TestResult->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:894
+[12-Dec-2017 19:32:24 UTC] PHP  11. PHPUnit\Framework\TestCase->runBare() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestResult.php:698
+[12-Dec-2017 19:32:24 UTC] PHP  12. PHPUnit\Framework\TestCase->runTest() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:939
+[12-Dec-2017 19:32:24 UTC] PHP  13. ReflectionMethod->invokeArgs() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:1071
+[12-Dec-2017 19:32:24 UTC] PHP  14. App\Tests\Controller\DefaultControllerTest->testIndex() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:1071
+[12-Dec-2017 19:32:24 UTC] PHP  15. Symfony\Bundle\FrameworkBundle\Test\WebTestCase::createClient() /Users/luklew/Sites/jenkins-test/tests/Controller/DefaultControllerTest.php:12
+[12-Dec-2017 19:32:24 UTC] PHP  16. Symfony\Component\DependencyInjection\Container->get() /Users/luklew/Sites/jenkins-test/vendor/symfony/framework-bundle/Test/WebTestCase.php:35
+[12-Dec-2017 19:32:24 UTC] PHP  17. ContainerWjhl6rh\srcTestDebugProjectContainer->getTest_ClientService() /Users/luklew/Sites/jenkins-test/vendor/symfony/dependency-injection/Container.php:299
+[12-Dec-2017 19:32:24 UTC] PHP  18. spl_autoload_call() /Users/luklew/Sites/jenkins-test/var/cache/test/ContainerWjhl6rh/srcTestDebugProjectContainer.php:444
+[12-Dec-2017 19:32:24 UTC] PHP  19. Composer\Autoload\ClassLoader->loadClass() /Users/luklew/Sites/jenkins-test/var/cache/test/ContainerWjhl6rh/srcTestDebugProjectContainer.php:444
+[12-Dec-2017 19:32:24 UTC] PHP  20. Composer\Autoload\includeFile() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:322
+[12-Dec-2017 19:32:24 UTC] PHP  21. include() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:444
+[12-Dec-2017 19:32:24 UTC] PHP  22. spl_autoload_call() /Users/luklew/Sites/jenkins-test/vendor/symfony/framework-bundle/Client.php:28
+[12-Dec-2017 19:32:24 UTC] PHP  23. Composer\Autoload\ClassLoader->loadClass() /Users/luklew/Sites/jenkins-test/vendor/symfony/framework-bundle/Client.php:28
+[12-Dec-2017 19:32:24 UTC] PHP  24. Composer\Autoload\includeFile() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:322
+[12-Dec-2017 19:32:24 UTC] PHP  25. include() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:444
+[12-Dec-2017 19:33:20 UTC] PHP Fatal error:  Class 'Symfony\Component\BrowserKit\Client' not found in /Users/luklew/Sites/jenkins-test/vendor/symfony/http-kernel/Client.php on line 31
+[12-Dec-2017 19:33:20 UTC] PHP Stack trace:
+[12-Dec-2017 19:33:20 UTC] PHP   1. {main}() /Users/luklew/Sites/jenkins-test/bin/phpunit:0
+[12-Dec-2017 19:33:20 UTC] PHP   2. require() /Users/luklew/Sites/jenkins-test/bin/phpunit:18
+[12-Dec-2017 19:33:20 UTC] PHP   3. include() /Users/luklew/Sites/jenkins-test/vendor/symfony/phpunit-bridge/bin/simple-phpunit:244
+[12-Dec-2017 19:33:20 UTC] PHP   4. PHPUnit\TextUI\Command::main() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/phpunit:17
+[12-Dec-2017 19:33:20 UTC] PHP   5. PHPUnit\TextUI\Command->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/TextUI/Command.php:148
+[12-Dec-2017 19:33:20 UTC] PHP   6. PHPUnit\TextUI\TestRunner->doRun() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/TextUI/Command.php:195
+[12-Dec-2017 19:33:20 UTC] PHP   7. PHPUnit\Framework\TestSuite->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/TextUI/TestRunner.php:546
+[12-Dec-2017 19:33:20 UTC] PHP   8. PHPUnit\Framework\TestSuite->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestSuite.php:755
+[12-Dec-2017 19:33:20 UTC] PHP   9. PHPUnit\Framework\TestCase->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestSuite.php:755
+[12-Dec-2017 19:33:20 UTC] PHP  10. PHPUnit\Framework\TestResult->run() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:894
+[12-Dec-2017 19:33:20 UTC] PHP  11. PHPUnit\Framework\TestCase->runBare() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestResult.php:698
+[12-Dec-2017 19:33:20 UTC] PHP  12. PHPUnit\Framework\TestCase->runTest() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:939
+[12-Dec-2017 19:33:20 UTC] PHP  13. ReflectionMethod->invokeArgs() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:1071
+[12-Dec-2017 19:33:20 UTC] PHP  14. App\Tests\Controller\DefaultControllerTest->testIndex() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/src/Framework/TestCase.php:1071
+[12-Dec-2017 19:33:20 UTC] PHP  15. Symfony\Bundle\FrameworkBundle\Test\WebTestCase::createClient() /Users/luklew/Sites/jenkins-test/tests/Controller/DefaultControllerTest.php:12
+[12-Dec-2017 19:33:20 UTC] PHP  16. Symfony\Component\DependencyInjection\Container->get() /Users/luklew/Sites/jenkins-test/vendor/symfony/framework-bundle/Test/WebTestCase.php:35
+[12-Dec-2017 19:33:20 UTC] PHP  17. ContainerWjhl6rh\srcTestDebugProjectContainer->getTest_ClientService() /Users/luklew/Sites/jenkins-test/vendor/symfony/dependency-injection/Container.php:299
+[12-Dec-2017 19:33:20 UTC] PHP  18. spl_autoload_call() /Users/luklew/Sites/jenkins-test/var/cache/test/ContainerWjhl6rh/srcTestDebugProjectContainer.php:444
+[12-Dec-2017 19:33:20 UTC] PHP  19. Composer\Autoload\ClassLoader->loadClass() /Users/luklew/Sites/jenkins-test/var/cache/test/ContainerWjhl6rh/srcTestDebugProjectContainer.php:444
+[12-Dec-2017 19:33:20 UTC] PHP  20. Composer\Autoload\includeFile() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:322
+[12-Dec-2017 19:33:20 UTC] PHP  21. include() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:444
+[12-Dec-2017 19:33:20 UTC] PHP  22. spl_autoload_call() /Users/luklew/Sites/jenkins-test/vendor/symfony/framework-bundle/Client.php:28
+[12-Dec-2017 19:33:20 UTC] PHP  23. Composer\Autoload\ClassLoader->loadClass() /Users/luklew/Sites/jenkins-test/vendor/symfony/framework-bundle/Client.php:28
+[12-Dec-2017 19:33:20 UTC] PHP  24. Composer\Autoload\includeFile() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:322
+[12-Dec-2017 19:33:20 UTC] PHP  25. include() /Users/luklew/Sites/jenkins-test/bin/.phpunit/phpunit-6.5/vendor/composer/ClassLoader.php:444
