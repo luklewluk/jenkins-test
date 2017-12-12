@@ -2,11 +2,15 @@
     <property file="build.properties" />
 
     <target name="phpunit">
-        <exec executable="php ${basedir}/bin/phpunit" failonerror="true"/>
+        <exec executable="php" failonerror="true">
+            <arg value="${basedir}/bin/phpunit"/>
+        </exec>
     </target>
 
     <target name="requirements-checker">
-        <exec executable="php ${basedir}/vendor/bin/requirements-checker" failonerror="true"/>
+        <exec executable="php" failonerror="true">
+            <arg value="${basedir}/vendor/bin/requirements-checker"/>
+        </exec>
     </target>
 
     <target name="composer-install">
@@ -17,7 +21,11 @@
     </target>
 
     <target name="cache-clear">
-        <exec executable="php ${basedir}/bin/console cache:clear --env=test" failonerror="true"/>
+        <exec executable="php" failonerror="true">
+            <arg value="${basedir}/bin/console"/>
+            <arg value="cache:clear"/>
+            <arg value="--env=test"/>
+        </exec>
     </target>
 
     <target name="build" depends="composer-install, requirements-checker, cache-clear, phpunit"/>
